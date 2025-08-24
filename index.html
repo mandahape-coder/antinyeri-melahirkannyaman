@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Deteksi Nyeri & Darurat Persalinan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sistem Deteksi Nyeri & Darurat Persalinan</h1>
+  </header>
+
+  <main>
+    <section id="camera-section">
+      <video id="camera" autoplay playsinline></video>
+      <canvas id="snapshot" style="display:none;"></canvas>
+    </section>
+
+    <section id="controls">
+      <button id="start-camera">Mulai Kamera</button>
+      <button id="take-photo">Ambil Foto</button>
+      <button id="emergency">🚨 Panggil Bantuan</button>
+    </section>
+
+    <section id="status">
+      <h2>Status Pasien</h2>
+      <p><strong>Skala Nyeri:</strong> <span id="pain-scale">-</span>/10</p>
+      <p><strong>Log Aktivitas:</strong></p>
+      <ul id="log"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sistem Monitoring Persalinan | Puskesmas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
